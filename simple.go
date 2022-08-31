@@ -50,7 +50,7 @@ func simple_parent() error {
 func simple_child() error {
 	log.Println("create cgroup maneger")
 	minMem := int64(1)                 // 1K
-	maxMem := int64(100 * 1024 * 1024) //100M
+	maxMem := int64(200 * 1024 * 1024) //100M
 	res := cgroupsv2.Resources{
 		Memory: &cgroupsv2.Memory{
 			Min: &minMem,
